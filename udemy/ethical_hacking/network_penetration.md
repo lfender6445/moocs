@@ -16,7 +16,7 @@ So lets have a look on each of these encryptions one by one:
 
 Conclusion:
 
-1.Do not use WEP encryption, as we seen how easy it is to crack it regardless of the complexity of the password and even if there is nobody connected to the network.
+1. Do not use WEP encryption, as we seen how easy it is to crack it regardless of the complexity of the password and even if there is nobody connected to the network.
 
 2. Use WPA2 with a complex password, make sure the password contains small letters, capital letters, symbols and numbers and;
 

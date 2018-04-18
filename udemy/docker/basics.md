@@ -1,7 +1,7 @@
 containers run images
 images are downloaded from dockerhub
 
-```
+```sh
 # start nginx
 
 # downloads nginx
@@ -26,7 +26,7 @@ these process run on the host machine (nginx, mongo, etc)
 
 
 
-```
+```sh
 docker image ls # list cached images
 # start bash but when you exit it dies (takes nginx with it)
 # this changes the nginx command to just use bash as the cmd

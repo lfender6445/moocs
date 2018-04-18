@@ -76,7 +76,7 @@ divide by 8.
 another example,
 171.64.0.0/14 Stanford network block
 
-14 is less than 2 octets of network part (14 is less than `16)
+14 is less than 2 octets of network part (14 is less than 16)
 
 So while all addresses on this network will have the same 8 bits (represented by 171), only 6 bits of the second octet will be fixed (giving us 2 extra bits to play with for addresses).
 

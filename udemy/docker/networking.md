@@ -29,7 +29,7 @@ docker container inspect --format '{{.NetworkSettings.IPAddress}}' webhost
 ```
 
 ## network management
-```
+```sh
 # show all created networks
 docker network ls
 # inspet bridge network, containers, their ips
@@ -50,7 +50,7 @@ docker network connect <id_of_network> <id_of_container>
 by default, bridge network does ship with dns resolution by default (you can technically use --link) with dns resolution so its usually easier to create your own network and add containers to them
 
 eg
-```
+```sh
 # assuming new_nginx container is already in my_app_net
 docker container run -d --name my_nginx --network my_app_net nginx`
 # 2 containers now in the network
